@@ -15,13 +15,13 @@ module design_1 (
 
   assign and_tmp = data0_i & data1_i;
   assign  or_tmp = data0_i | data1_i;
-  assign xor_tmp = data0_i ^ data1_i;
+  assign xor_tmp = data0_i ~^ data1_i;
 
   always_comb begin : proc_mux
     case (sel_i)
       2'b00: result_o =      '0;
       2'b01: result_o = and_tmp;
-      2'b10: result_o =  or_tmp;
+      2'b11: result_o =  or_tmp;
       2'b11: result_o = xor_tmp;
     endcase
   end

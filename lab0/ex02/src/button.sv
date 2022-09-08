@@ -22,7 +22,7 @@ module button (
   always_comb begin : proc_next_state
     case (state_q)
       IDLE:    state_d = button_i ? PRESS : IDLE;
-      PRESS:   state_d = button_i ? HOLD  : IDLE;
+      PRESS:   state_d = button_i ? PRESS : IDLE;
       HOLD:    state_d = button_i ? HOLD  : IDLE;
       default: state_d = IDLE;
     endcase

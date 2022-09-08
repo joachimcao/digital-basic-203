@@ -1,5 +1,5 @@
 #*******************************************************************************
-# Creator:        Hai Cao Xuan (caoxuanhaipr@gmail.com)
+# Creator:        Hai Cao Xuan (cxhai.sdh221@hcmut.edu.vn)
 # Description:    makefile
 #*******************************************************************************
 # Copyright (c) 2022 Hai Cao Xuan
